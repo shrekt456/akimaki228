@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 28px;
+    color: #ff6a00;
+} 
+#ff6a00
+.menu button {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff6a00, #ff8c1a);
+    transition: 0.3s;
+}
+.hero img {
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+img {
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+}
+
+/* Увеличенное состояние */
+img.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 9999;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    border-radius: 12px;
+}
+img.zoomed {
+    max-width: 90vw;
+    max-height: 90vh;
+}
